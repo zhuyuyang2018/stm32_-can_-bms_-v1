@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"bms_can_read_v1\startup_stm32f103xb.o"
+"bms_can_read_v1\main.o"
+"bms_can_read_v1\gpio.o"
+"bms_can_read_v1\can.o"
+"bms_can_read_v1\usart.o"
+"bms_can_read_v1\stm32f1xx_it.o"
+"bms_can_read_v1\stm32f1xx_hal_msp.o"
+"bms_can_read_v1\stm32f1xx_hal_gpio_ex.o"
+"bms_can_read_v1\stm32f1xx_hal_can.o"
+"bms_can_read_v1\stm32f1xx_hal.o"
+"bms_can_read_v1\stm32f1xx_hal_rcc.o"
+"bms_can_read_v1\stm32f1xx_hal_rcc_ex.o"
+"bms_can_read_v1\stm32f1xx_hal_gpio.o"
+"bms_can_read_v1\stm32f1xx_hal_dma.o"
+"bms_can_read_v1\stm32f1xx_hal_cortex.o"
+"bms_can_read_v1\stm32f1xx_hal_pwr.o"
+"bms_can_read_v1\stm32f1xx_hal_flash.o"
+"bms_can_read_v1\stm32f1xx_hal_flash_ex.o"
+"bms_can_read_v1\stm32f1xx_hal_exti.o"
+"bms_can_read_v1\stm32f1xx_hal_tim.o"
+"bms_can_read_v1\stm32f1xx_hal_tim_ex.o"
+"bms_can_read_v1\stm32f1xx_hal_uart.o"
+"bms_can_read_v1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "BMS_CAN_READ_V1\BMS_CAN_READ_V1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BMS_CAN_READ_V1.map" -o BMS_CAN_READ_V1\BMS_CAN_READ_V1.axf
