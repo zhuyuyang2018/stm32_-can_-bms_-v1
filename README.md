@@ -1,37 +1,19 @@
 # STM32_CAN_BMS_V1
 
 #### 介绍
-CAN通讯读取电池管理系统信息
+CAN通讯读取电池管理系统信息V1
 
 #### 软件架构
-软件架构说明
+stm32cubemx生成示例代码，通过can口读取电池管理系统信息。
 
 
-#### 安装教程
+#### 通信协议
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1.上位机参照平台化电池管理系统技术需求 V1 4. 协议发送标准帧 0x001和 0x002设置从板数数量和每个从板
+单体电压数后，主控上传相应实时数据和参数信息。 波特率 250Kbps，扩展帧，优先级为 6
 
 
-#### 特技
+#### 实时数据
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0205/145431_088d49e7_5440508.png "图片1.png")
+
